@@ -34,4 +34,5 @@ if os.environ.get("APP_LOCATION") == "heroku":
 else:
     app.run(host="localhost", port=8080, debug=True)
 
+
 # app.run(host='localhost', port=8080)
