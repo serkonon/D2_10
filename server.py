@@ -7,7 +7,8 @@ from sentry_sdk.integrations.bottle import BottleIntegration
 app = Bottle()
 
 
-@app.route('/success')
+# @app.route('/success')
+@app.route('/')
 def success():
     return "Ok"
 
