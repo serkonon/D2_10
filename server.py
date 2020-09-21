@@ -19,7 +19,7 @@ def fail():
 
 
 sentry_sdk.init(
-    dsn= "https://451dcbfea8954a5293d16d6d531cd99d@o450835.ingest.sentry.io/5435828",
+    dsn= "", # Укажите свои данные
     integrations=[BottleIntegration()]
 )
 
