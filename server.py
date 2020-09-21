@@ -1,8 +1,8 @@
 import os
 import sentry_sdk
-
 from bottle import Bottle, request
 from sentry_sdk.integrations.bottle import BottleIntegration
+import env
 
 app = Bottle()
 
@@ -19,7 +19,7 @@ def fail():
 
 
 sentry_sdk.init(
-    dsn= "", # Укажите свои данные
+    dsn=env.SENTRY_DSN,
     integrations=[BottleIntegration()]
 )
 
